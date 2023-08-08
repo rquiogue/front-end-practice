@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <div class="header-item data">
+                <i class="fa-solid fa-cloud"></i>
+                <br>
+                <h1>Enter Data</h1>
+            </div>
+            <div class="header-item query" id="address">
+                <i class="fa-solid fa-question"></i>
+                <br>
+                <h1>Query</h1>
+            </div>
+            <div class="header-item center-item" id="home">
+                <i class="fa-solid fa-home" id="centerIcon"></i>
+                <br>
+                <h1>Home</h1>
+            </div>
+            <div class="header-item tools" id="blog">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <br>
+                <h1>Tools</h1>
+            </div>
+            <div class="header-item" id="photo">
+                <i class="fa-solid fa-download"></i>
+                <br>
+                <h1>Source Code</h1>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <div class="side-bar">
+                <i class="fa-solid fa-circle-right"></i>
+            </div>
+
+
+            <form class="data-entry-form">
+                <h1>
+                    Enter Information Here
+                </h1>
+
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input-group">
+                    <label for="grade">Grade:</label>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <select name="grade" id="grade">
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior+">Senior+</option>
+                      </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="fam"></label>
+                    <i class="fa-solid fa-people-roof"></i>
+                    <select name="fam" id="fam">
+                        <option value="none">N/A</option>
+                        <option value="1">Fam 1</option>
+                        <option value="2">Fam 2</option>
+                        <option value="3">Fam 3</option>
+                        <option value="4">Fam 4</option>
+                        <option value="5">Fam 5</option>
+                        <option value="6">Fam 6</option>
+                      </select>
+                </div>
+
+                <input type="submit" class="submit-button">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

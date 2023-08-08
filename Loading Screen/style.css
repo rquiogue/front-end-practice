@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.object {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  height: 50vh;
+}
+
+
+.loader {
+    border-top: 16px solid #F9C737;
+    border-right: 16px solid #CD2029;
+    border-bottom: 16px solid #4A4BDA;
+    border-left: 16px solid lightgrey;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+.ball {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-style:double;
+  border-color: lightgray;
+  border-width: 1rem;
+  animation: 0.75s cubic-bezier(.68,0,1,.99) alternate infinite bounce;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(-10rem);}
+  100% {transform: translateY(20rem);}
+}
+
+.ground {
+  height: 2rem;
+  width: 10rem;
+  background: black;
+  transform: translateY(31rem);
+  z-index: 1;
+}
+
+.ball img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: fill;
+}
